@@ -11,8 +11,9 @@ var con=mysql.createConnection({
 con.connect((err)=>{
  if (err) console.error(err);
  console.log("connected")
- var sql="insert into items(idno,itmname,qty) values(0,'Green gram','3kg')";
- con.query(sql,(err,result)=>{
+ var sql="insert into items(idno,itmname,qty) values(0,'Wheat','50kg')";
+ var sql2="UPDATE items SET itmname='Wheat FLour' WHERE idno=4";
+ con.query(sql2,(err,result)=>{
     if(err) console.error(err);
     console.log("1 row effected");
  })
