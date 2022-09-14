@@ -1,0 +1,7 @@
+create table  tablename(columnName datatype primmary key,...);
+insert into tablename(columnName,..) values(value1,...);
+insert into tablename values(valu1..,)
+
+UPDATE tablename SET columnname=value WHERE column=value;
+
+DELETE  FROM  tablename WHERE columnName=1;
